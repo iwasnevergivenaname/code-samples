@@ -1,0 +1,17 @@
+function range(start, end) {
+  let a = start;
+  let z = end + 1;
+  let numArr = [];
+
+  for (let i = a; i < z; i++) {
+    numArr.push(i);
+  }
+  return numArr.reverse();
+}
+console.log(range(1, 10));
+
+function sum(numArr) {
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  return numArr.reduce(reducer);
+}
+console.log(sum(range(1, 10)));
