@@ -15,4 +15,3 @@ function sum(numArr) {
   return numArr.reduce(reducer);
 }
 console.log(sum(range(1, 10)));
-
